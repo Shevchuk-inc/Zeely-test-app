@@ -1,0 +1,12 @@
+{
+    "Include Media Query Mixin": {
+      "prefix": "mq",
+      "body": [
+        "@include mq(${1|xl,lg-xl,lg,md,pc,sm-pc,lg-tab,tab,sm-tab,lg-mob,mob,sm-mob,xs-mob|}) {",
+        "  $0",
+        "}"
+      ],
+      "description": "Include a media query mixin"
+    }
+}
+  
