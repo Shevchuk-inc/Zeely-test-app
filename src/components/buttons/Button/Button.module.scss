@@ -1,0 +1,13 @@
+.button {
+  cursor: pointer;
+  border-radius: 100px;
+  padding: rem(14) rem(31);
+  font-weight: 600 !important;
+  font-size: rem(12) !important;
+
+  &.default {
+    background: $button-bg-clr;
+    color: $button-clr;
+    width: fit-content;
+  }
+}

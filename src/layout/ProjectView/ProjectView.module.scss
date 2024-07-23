@@ -1,0 +1,26 @@
+.view {
+  display: grid;
+  transition: padding var(--layout-trans);
+  grid-template-columns: rem(248) calc(100% - rem(684)) rem(368);
+}
+
+.content {
+  display: flex;
+  max-width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.toggle-button {
+  left: 0;
+  z-index: 2;
+  display: none;
+  position: fixed;
+
+  svg {
+    width: rem(24);
+    height: rem(24);
+  }
+}

@@ -1,0 +1,22 @@
+.item {
+  gap: rem(12);
+  display: flex;
+  align-items: flex-start;
+
+  &-title {
+    font-size: rem(14);
+    font-weight: 700;
+    max-width: rem(305);
+  }
+
+  &-description {
+    font-size: rem(12);
+    margin-bottom: rem(12) !important;
+  }
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}

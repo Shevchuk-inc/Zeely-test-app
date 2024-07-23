@@ -1,0 +1,20 @@
+.creatives {
+  margin-top: rem(40);
+
+  &-title {
+    font-weight: 700;
+    font-size: rem(16);
+  }
+
+  &-header {
+    display: flex;
+    align-items: center;
+    margin-top: rem(24);
+    justify-content: space-between;
+
+    &-title {
+      font-weight: 600;
+      font-size: rem(14);
+    }
+  }
+}

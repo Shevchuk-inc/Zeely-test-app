@@ -1,0 +1,38 @@
+.sidebar {
+  padding-top: rem(30);
+  padding-inline: rem(24);
+
+  &-avatar {
+    width: rem(40);
+    height: rem(40);
+
+    &-image {
+      @include img-fit(contain);
+    }
+  }
+
+  &-title {
+    font-weight: 600;
+    font-size: rem(16);
+  }
+
+  &-notification {
+    position: relative;
+
+    &-count {
+      font-weight: 600;
+      font-size: rem(9);
+      background-color: $tertiary-clr;
+      color: $bg-clr;
+      width: rem(16);
+      height: rem(16);
+      border-radius: 55px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      top: rem(-7);
+      right: rem(-7);
+    }
+  }
+}

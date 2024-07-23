@@ -1,0 +1,16 @@
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title {
+  font-weight: 500;
+  font-size: rem(14);
+}
+
+.value,
+.currency {
+  font-size: rem(14);
+  font-weight: 700;
+}

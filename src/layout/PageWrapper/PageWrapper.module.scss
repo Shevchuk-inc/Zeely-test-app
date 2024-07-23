@@ -1,0 +1,27 @@
+.wrapper {
+  width: 100%;
+  margin: 0 auto;
+  min-height: 100vh;
+  position: relative;
+  max-width: rem(1054);
+  padding: rem(30) rem(84);
+
+  .arrowIcon svg {
+    left: rem(30);
+    flex: 0 0 rem(26);
+    position: absolute;
+    transform: translate(50%, 50%);
+  }
+}
+
+.title {
+  color: $text-clr;
+  font-weight: 700;
+  font-size: rem(26);
+  line-height: rem(26);
+  padding-bottom: rem(30);
+}
+
+.section {
+  margin-top: rem(30);
+}

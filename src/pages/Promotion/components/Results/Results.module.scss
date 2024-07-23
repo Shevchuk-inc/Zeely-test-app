@@ -1,0 +1,39 @@
+.results {
+  &-title {
+    font-weight: 600;
+    font-size: rem(16);
+  }
+
+  &-list {
+    gap: rem(20);
+    display: flex;
+    margin-top: rem(24);
+    flex-direction: column;
+  }
+
+  .show-more-button {
+    gap: rem(4);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border-radius: 100px;
+    justify-content: center;
+    border: 1px solid $border-light-clr;
+
+    .icon {
+      flex: 0 0 rem(14);
+      transform: rotate(270deg);
+      transition: transform 0.2s ease-in-out;
+
+      &.open {
+        transform: rotate(90deg);
+      }
+    }
+
+    &-text {
+      font-weight: 600;
+      font-size: rem(14);
+      padding-block: rem(18);
+    }
+  }
+}

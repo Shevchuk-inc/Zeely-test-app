@@ -1,0 +1,21 @@
+.brand {
+  gap: rem(2);
+  display: flex;
+  width: rem(78);
+  height: rem(28);
+  color: $text-clr;
+  align-items: center;
+  border-radius: rem(32);
+  justify-content: center;
+  background: $primary-clr;
+  padding: rem(7) rem(12) rem(8) rem(10);
+
+  &-title {
+    font-size: rem(12);
+    font-weight: 600;
+  }
+
+  svg {
+    flex: 0 0 rem(14);
+  }
+}

@@ -1,0 +1,40 @@
+.switch {
+  &.default {
+    position: relative;
+    width: rem(40);
+    height: rem(24);
+    margin: 0;
+    vertical-align: top;
+    background: $default-bg-switch;
+    border: 1px solid $border-clr;
+    border-radius: 30px;
+    outline: none;
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    transition: all 0.3s cubic-bezier(0.2, 0.85, 0.32, 1.2);
+
+    &::after {
+      content: "";
+      top: rem(1);
+      left: rem(1);
+      width: rem(20);
+      height: rem(20);
+      position: absolute;
+      border-radius: 50%;
+      transform: translateX(0);
+      background-color: $default-clr-switch;
+      transition: all 0.3s cubic-bezier(0.2, 0.85, 0.32, 1.2);
+    }
+
+    &:checked::after {
+      transform: translateX(calc(100% - 4px));
+      background-color: $default-clr-active-switch;
+    }
+
+    &:checked {
+      background-color: $default-bg-active-switch;
+    }
+  }
+}

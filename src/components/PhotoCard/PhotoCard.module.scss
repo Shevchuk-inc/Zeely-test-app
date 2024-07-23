@@ -1,0 +1,26 @@
+.card {
+  width: rem(80);
+  height: rem(80);
+  flex: 0 0 rem(80);
+
+  &-image {
+    @include img-fit(contain);
+
+    border-radius: 8px;
+    border: 1px solid $border-light-clr;
+  }
+}
+
+.card-list {
+  width: rem(80);
+  height: rem(80);
+  position: relative;
+
+  &-image {
+    @include img-fit(contain);
+
+    border-radius: 8px;
+    position: absolute;
+    border: 1px solid $border-light-clr;
+  }
+}

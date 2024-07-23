@@ -1,0 +1,52 @@
+.badge {
+  position: relative;
+  width: fit-content;
+  border-radius: 100px;
+  padding: rem(6) rem(10);
+  transition: all 0.3s ease-in-out;
+
+  span {
+    color: $text-clr;
+    font-weight: 500;
+    font-size: rem(12);
+  }
+
+  &.default {
+    border: 1px solid $border-clr;
+  }
+
+  &.success {
+    padding-left: rem(22);
+    border: 1px solid $primary-light-clr;
+    background-color: $primary-light-clr;
+
+    &::before {
+      content: "";
+      top: 50%;
+      left: rem(6);
+      width: rem(6);
+      height: rem(6);
+      position: absolute;
+      border-radius: 100px;
+      background-color: $primary-clr;
+      transform: translate(rem(6), -50%);
+    }
+  }
+
+  &.paused {
+    padding-left: rem(22);
+    border: 1px solid $border-clr;
+
+    &::before {
+      content: "";
+      top: 50%;
+      left: rem(6);
+      width: rem(6);
+      height: rem(6);
+      position: absolute;
+      border-radius: 100px;
+      background-color: $border-clr;
+      transform: translate(rem(6), -50%);
+    }
+  }
+}

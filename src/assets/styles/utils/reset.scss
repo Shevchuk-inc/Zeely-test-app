@@ -1,0 +1,109 @@
+html {
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  overflow-x: hidden;
+  text-rendering: optimizeSpeed;
+  -webkit-text-size-adjust: none;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0 !important;
+}
+
+ul,
+ol {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+ul:not([class]),
+ol:not([class]) {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+ul[class],
+ol[class] {
+  list-style: none !important;
+}
+
+a {
+  color: inherit !important;
+  text-decoration-skip-ink: auto !important;
+  text-decoration: none !important;
+}
+
+a,
+button {
+  cursor: pointer;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-appearance: none;
+  border: none;
+}
+
+li {
+  list-style-type: none !important;
+  padding: unset;
+}
+
+img,
+picture,
+svg {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit !important;
+}
+
+button {
+  padding: 0;
+  background-color: transparent;
+}
+
+input:focus,
+input:focus-visible,
+:focus,
+:focus-visible {
+  outline: none !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto !important;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

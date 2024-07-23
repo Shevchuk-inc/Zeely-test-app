@@ -1,0 +1,23 @@
+@import "./utils/mixins.scss";
+@import "./utils/variables";
+@import "./utils/colors.scss";
+@import "./utils/reset.scss";
+
+@import "./fonts/fonts.scss";
+@import "./general/typography.scss";
+
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/mixins";
+@import "bootstrap/scss/bootstrap";
+@import "swiper/css";
+
+$utilities: (
+  "gap-10px": (
+    property: gap,
+    class: gap10,
+    values: 10px,
+  ),
+);
+
+@import "bootstrap/scss/utilities";

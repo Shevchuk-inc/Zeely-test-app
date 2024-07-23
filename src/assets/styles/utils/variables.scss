@@ -1,0 +1,14 @@
+:root {
+  --max-content-width: 1600px;
+  --content-x-padding: #{rem(40)};
+  --sidebar-width: #{rem(260)};
+
+  --hover-trans: 0.15s ease;
+  --layout-trans: 0.25s ease-in-out;
+
+  @media (screen(sm)) {
+    --sidebar-width: Min(#{rem(340)}, calc(100vw - #{rem(88)}));
+    --content-x-padding: #{rem(10)};
+    --layout-trans: 0.15s ease-in-out;
+  }
+}

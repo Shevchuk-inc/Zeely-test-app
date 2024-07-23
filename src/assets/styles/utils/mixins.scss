@@ -1,0 +1,69 @@
+@use "sass:math";
+
+$html-font-size: 16px;
+$baseRem: 16;
+$breakpoints: (
+  "xl": 1920,
+  "lg-xl": 1600,
+  "lg": 1440,
+  "md": 1366,
+  "pc": 1280,
+  "sm-pc": 1140,
+  "lg-tab": 1024,
+  "tab": 968,
+  "sm-tab": 768,
+  "lg-mob": 568,
+  "mob": 414,
+  "sm-mob": 375,
+  "xs-mob": 320,
+);
+
+@mixin mq($width, $type: min) {
+  @if map_has_key($breakpoints, $width) {
+    $width: map_get($breakpoints, $width);
+    $em: if($type==min, $width / $baseRem + "em", ($width - 1) / $baseRem + em);
+    @media only screen and (#{$type}-width: $em) {
+      @content;
+    }
+  }
+}
+
+@function stripUnit($value) {
+  @return math.div($value, ($value * 0 + 1));
+}
+
+@function rem($pxValue) {
+  @return #{math.div(stripUnit($pxValue), stripUnit($html-font-size))}rem;
+}
+
+@mixin font-size($vw-min, $vw-max, $min-fz, $diff) {
+  font-size: calc(
+    #{$min-fz + "px"} + #{$diff} *
+      ((100vw - #{$vw-min + "px"}) / (#{$vw-max} - #{$vw-min}))
+  );
+}
+
+@mixin pseudo($display: block, $pos: absolute, $content: "") {
+  content: $content;
+  display: $display;
+  position: $pos;
+}
+
+@mixin img-fit($fit, $pos: center) {
+  width: 100%;
+  height: 100%;
+  object-fit: $fit;
+  object-position: $pos;
+}
+
+@mixin autofill($size: 30px, $color: #ffffff, $text: #ffffff) {
+  &[data-com-onepassword-filled],
+  &:-webkit-autofill,
+  &:-webkit-autofill:hover,
+  &:-webkit-autofill:focus,
+  &:-webkit-autofill:active,
+  &:-internal-autofill-selected {
+    color: $text !important;
+    transition: background-color 0s 600000s, color 0s 600000s;
+  }
+}
