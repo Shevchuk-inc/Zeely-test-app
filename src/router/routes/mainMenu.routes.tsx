@@ -1,5 +1,5 @@
 import { ROUTES } from "@/constants/routePaths";
-import { Navigate, RouteObject } from "react-router-dom";
+import { RouteObject } from "react-router-dom";
 
 import { WithTitle } from "../../components/PageTitle";
 import Creatives from "../../pages/Creatives";
