@@ -17,7 +17,10 @@ const CreativesCard: FC<CreativesCardProps> = ({ item, onToggle }) => {
     totalViews,
     linkClicks,
     activeUntil,
+    perLinkClick,
     uniqueViewers,
+    totalLinkClick,
+    automaticLinkClicks,
   } = item;
 
   return (
@@ -46,6 +49,9 @@ const CreativesCard: FC<CreativesCardProps> = ({ item, onToggle }) => {
         totalViews={totalViews}
         linkClicks={linkClicks}
         uniqueViewers={uniqueViewers}
+        automaticLinkClicks={automaticLinkClicks || 0}
+        totalLinkClick={totalLinkClick || 0}
+        perLinkClick={perLinkClick || 0}
       />
     </div>
   );

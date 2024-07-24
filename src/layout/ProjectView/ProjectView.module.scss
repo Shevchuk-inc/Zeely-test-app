@@ -1,7 +1,8 @@
 .view {
   display: grid;
+  height: 100vh;
   transition: padding var(--layout-trans);
-  grid-template-columns: rem(248) calc(100% - rem(684)) rem(368);
+  grid-template-columns: rem(248) 1fr rem(368);
 }
 
 .content {

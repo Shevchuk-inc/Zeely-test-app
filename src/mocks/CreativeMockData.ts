@@ -15,6 +15,9 @@ export const creativeMockData: CreativeType[] = [
     spent: 1045.0,
     linkClicks: 342,
     isActive: true,
+    automaticLinkClicks: 353,
+    perLinkClick: 13.8,
+    totalLinkClick: 23,
   },
   {
     id: 2,
@@ -26,6 +29,9 @@ export const creativeMockData: CreativeType[] = [
     spent: 23.4,
     linkClicks: 2,
     isActive: true,
+    automaticLinkClicks: 5,
+    perLinkClick: 123.87,
+    totalLinkClick: 1000,
   },
   {
     id: 3,
@@ -37,5 +43,8 @@ export const creativeMockData: CreativeType[] = [
     spent: 0.0,
     linkClicks: 0,
     isActive: true,
+    automaticLinkClicks: 0,
+    perLinkClick: 0.0,
+    totalLinkClick: 0,
   },
 ];

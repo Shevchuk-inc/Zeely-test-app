@@ -19,7 +19,11 @@ const Creatives: React.FC = () => {
   };
 
   const renderHeaderLabels = Object.values(CREATIVES_HEADER_LABELS).map(
-    (key) => <span className={styles.creativesHeaderTitle}>{key}</span>,
+    (key) => (
+      <span key={key} className={styles.creativesHeaderTitle}>
+        {key}
+      </span>
+    ),
   );
 
   return (

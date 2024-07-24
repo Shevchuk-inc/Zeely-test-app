@@ -8,9 +8,20 @@ const CreativeStats: FC<CreativeStatsProps> = ({
   spent,
   totalViews,
   linkClicks,
+  perLinkClick,
   uniqueViewers,
+  totalLinkClick,
+  automaticLinkClicks,
 }) => {
-  const stats = { spent, totalViews, linkClicks, uniqueViewers };
+  const stats = {
+    spent,
+    totalViews,
+    linkClicks,
+    uniqueViewers,
+    totalLinkClick,
+    perLinkClick,
+    automaticLinkClicks,
+  };
 
   return (
     <div className={styles.stats}>

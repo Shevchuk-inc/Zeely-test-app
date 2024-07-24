@@ -8,6 +8,10 @@ export interface CreativeType {
   spent: number;
   linkClicks: number;
   isActive: boolean;
+  // only for testing
+  automaticLinkClicks?: number;
+  perLinkClick?: number;
+  totalLinkClick?: number;
 }
 
 export interface CreativesState {
